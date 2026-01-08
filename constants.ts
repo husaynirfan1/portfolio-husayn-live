@@ -18,6 +18,7 @@ export const EXPERIENCES = [
     company: "PWN Excellence Sdn. Bhd.",
     role: "PROTÉGÉ Simulator Support Engineer",
     period: "Aug 2025 — Present",
+    logo: "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=800&auto=format&fit=crop", // Cockpit/Simulator vibe
     description: "Provided real-time support for crews during simulator sessions. Performed Qualification Test Guide (QTG) and Preventive Maintenance (PM). Built battery voltage monitoring system with IoT implementation. Performed & PIC for Subjective Test Guide (STG) and involved in several Simulator on Ground (SOG).",
     technologies: ["IoT", "Maintenance", "Level-D FFS", "AW139", "QTG", "STG"]
   },
@@ -25,6 +26,7 @@ export const EXPERIENCES = [
     company: "CAE KUALA LUMPUR",
     role: "Apprentice Simulator Technician",
     period: "July 2024 — Jan 2025",
+    logo: "https://images.unsplash.com/photo-1474302770737-173ee21bab63?q=80&w=800&auto=format&fit=crop", // Hangar/Tech vibe
     description: "Provided real-time support for crews during simulatorsessions. Assisted in troubleshooting DR (Deficiency Raised) or casualties during simulator sessions, performing Qualification Test Guide (QTG), Preventive Maintenance (PM), updating Navigation Database (NDB) and visual database. Developed software from debugged script to reduce redundancy and time during troubleshooting. (Batch) Involved in Subjective Test Guide (STG) and involved in several Simulator on Ground (SOG).",
     technologies: ["Batch Scripting", "Troubleshooting", "Database Mgmt", "Level-D FFS", "A320", "A330", "QTG"]
   },
@@ -32,6 +34,7 @@ export const EXPERIENCES = [
     company: "Swifty",
     role: "Freelance Mobile App Developer",
     period: "Aug 2022 — Present",
+    logo: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=800&auto=format&fit=crop", // Android/Code vibe
     description: "Offering on-demand Android development services. Projects include semi-medical devices, machine learning (TF Lite) based applications, and management systems.",
     technologies: ["Android Studio", "Java", "TensorFlow Lite", "Firebase", "Python", "API", "Arduino", "MLKit"]
   },
@@ -39,6 +42,7 @@ export const EXPERIENCES = [
     company: "Malaysian Flying Academy",
     role: "Internship Trainee",
     period: "Mar 2022 — July 2022",
+    logo: "https://images.unsplash.com/photo-1559067515-bf7d799b6d4d?q=80&w=800&auto=format&fit=crop", // General Aviation vibe
     description: "Gained hands-on experience in Technical Control, Bonded Store operations, and Aircraft Maintenance on Piper Archer, Archer TX and Seminole aircraft.",
     technologies: ["Aircraft Maintenance", "Logistics", "Technical Control"]
   }
