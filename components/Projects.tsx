@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { ExternalLink, Github } from 'lucide-react';
-import { PROJECTS } from '../constants';
+import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
+import { PROJECTS, COMMUNITY_CONTRIBUTIONS } from '../constants';
 
 const ProjectVideo = ({ src }: { src: string }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -121,11 +121,6 @@ const Projects: React.FC = () => {
           </div>
           
           <div className="w-full overflow-hidden rounded-xl bg-surface/50 p-6 md:p-8 shadow-2xl border border-white/5 hover:border-accent/20 transition-all duration-500 group">
-             {/* 
-                We use the inverted color of our accent (#D4D4D8) which is roughly #2B2B27.
-                Then we invert the image using CSS filter to make the text light and the empty cells dark,
-                while restoring the accent color for the active cells.
-             */}
              <a href="https://github.com/husaynirfan1" target="_blank" rel="noopener noreferrer">
                 <img 
                   src="https://ghchart.rshah.org/2B2B27/husaynirfan1" 
@@ -145,6 +140,49 @@ const Projects: React.FC = () => {
                 </a>
              </div>
           </div>
+        </div>
+
+        {/* Community Contributions */}
+        <div className="mt-32">
+           <div className="flex items-center mb-12 justify-center">
+                <div className="h-px bg-white/10 w-12 mr-4"></div>
+                <h3 className="font-serif text-2xl text-highlight font-bold">
+                  Community Contributions
+                </h3>
+                <div className="h-px bg-white/10 w-12 ml-4"></div>
+           </div>
+
+           <div className="grid md:grid-cols-2 gap-8">
+              {COMMUNITY_CONTRIBUTIONS.map((contribution, index) => (
+                 <a 
+                   key={index}
+                   href={contribution.link} 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   className="group bg-surface/30 rounded-lg overflow-hidden border border-white/5 hover:border-accent/30 hover:bg-surface/50 transition-all duration-300 flex flex-col h-full"
+                 >
+                    <div className="h-48 overflow-hidden relative">
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-300 z-10"></div>
+                      <img 
+                        src={contribution.mediaSrc} 
+                        alt={contribution.title} 
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-6 flex-1 flex flex-col">
+                      <div className="flex justify-between items-start mb-3">
+                         <h4 className="font-serif text-xl font-bold text-highlight group-hover:text-accent transition-colors">
+                           {contribution.title}
+                         </h4>
+                         <ArrowUpRight className="text-muted group-hover:text-accent transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" size={20} />
+                      </div>
+                      <p className="text-muted text-sm leading-relaxed mb-4 flex-1">
+                        {contribution.description}
+                      </p>
+                    </div>
+                 </a>
+              ))}
+           </div>
         </div>
 
       </div>
