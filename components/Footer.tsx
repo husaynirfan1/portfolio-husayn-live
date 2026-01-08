@@ -2,6 +2,39 @@ import React from 'react';
 import { SOCIAL_LINKS } from '../constants';
 
 const Footer: React.FC = () => {
+
+  const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault(); // 1. Stop the browser from opening a new tab
+    
+    const fileUrl = "https://7z3tqrxfdnfbzols.public.blob.vercel-storage.com/resume/RESUME_LATEST_2025.pdf";
+    const filename = "Husayn_Irfan_Resume.pdf"; // The name the user will see
+
+    try {
+      // 2. Fetch the file in the background
+      const response = await fetch(fileUrl);
+      if (!response.ok) throw new Error('Network response was not ok');
+      
+      // 3. Convert it to a "Blob" (a raw file object)
+      const blob = await response.blob();
+      
+      // 4. Create a temporary invisible link to trigger the download
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename; // This forces the name and download
+      document.body.appendChild(link);
+      link.click();
+      
+      // 5. Clean up
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Download failed, falling back to tab:', error);
+      // Fallback: If fetch fails (rare), open in new tab so user still gets it
+      window.open(fileUrl, '_blank');
+    }
+  };
+
   return (
     <footer id="contact" className="py-24 px-6 text-center scroll-mt-24">
       <div className="max-w-2xl mx-auto mb-24">
@@ -18,12 +51,12 @@ const Footer: React.FC = () => {
           >
             Say Hello
           </a>
+          
+          {/* Updated Button with onClick handler */}
           <a 
             href="https://7z3tqrxfdnfbzols.public.blob.vercel-storage.com/resume/RESUME_LATEST_2025.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            download="Husayn_Irfan_2026.pdf"
-            className="inline-block border border-accent text-accent px-8 py-4 rounded hover:bg-accent/10 transition-colors duration-300 font-medium w-full sm:w-auto"
+            onClick={handleDownload}
+            className="inline-block border border-accent text-accent px-8 py-4 rounded hover:bg-accent/10 transition-colors duration-300 font-medium w-full sm:w-auto cursor-pointer"
           >
             Download Resume
           </a>
