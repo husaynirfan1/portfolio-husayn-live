@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
         <p className="text-accent font-mono mb-4">04. What's Next?</p>
         <h2 className="font-serif text-4xl md:text-5xl font-bold text-highlight mb-6">Get In Touch</h2>
         <p className="text-muted text-lg mb-10 leading-relaxed">
-          I am currently open for new opportunities in software development, AI engineering, or avionics support. Whether you have a question or just want to say hi, my inbox is always open!
+          I am currently open for new opportunities in software development, AI engineering, or simulator support. Whether you have a question or just want to say hi, my inbox is always open!
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
