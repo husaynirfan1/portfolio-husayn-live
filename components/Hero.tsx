@@ -22,6 +22,7 @@ const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative pt-20 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-4 items-center">
+    
         {/* Text Content - Left Side */}
         <div className="order-2 md:order-1 relative z-10 flex flex-col justify-center">
           <p className="text-accent mb-6 font-medium tracking-wide animate-fade-in" style={{ animationDelay: '0.1s' }}>
@@ -49,8 +50,10 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Animation - Right Side */}
-        <div className="order-1 md:order-2 w-full h-[400px] md:h-[600px] relative z-0 fade-in">
-           <MorphingAnimation />
+        <div className="order-1 md:order-2 w-full h-[400px] md:h-[600px] relative z-0 fade-in flex items-center justify-center">
+          <div className="w-full max-w-[90vw] md:max-w-none h-full">
+            <MorphingAnimation />
+          </div>
         </div>
       </div>
 
