@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
     e.preventDefault(); // 1. Stop the browser from opening a new tab
     
     const fileUrl = "https://7z3tqrxfdnfbzols.public.blob.vercel-storage.com/resume/RESUME_LATEST_2025.pdf";
-    const filename = "Husayn_Irfan_Resume.pdf"; // The name the user will see
+    const filename = "Husayn_Irfan_Resume_2026.pdf"; // The name the user will see
 
     try {
       // 2. Fetch the file in the background
