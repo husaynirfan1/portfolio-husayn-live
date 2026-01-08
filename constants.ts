@@ -13,12 +13,12 @@ export const SOCIAL_LINKS = [
   { icon: Mail, href: "mailto:mhusaynirfan@gmail.com", label: "Email" },
 ];
 
-export const EXPERIENCES = [
+export const EXPERIENCES = [ 
   {
     company: "PWN Excellence Sdn. Bhd.",
     role: "PROTÉGÉ Simulator Support Engineer",
     period: "Aug 2025 — Present",
-    description: "Provided real-time support for crews during simulatorsessions. Performed Qualification Test Guide (QTG) and Preventive Maintenance (PM). Built battery voltage monitoring system with IoT implementation. Performed & PIC for Subjective Test Guide (STG) and involved in several Simulator on Ground (SOG).",
+    description: "Provided real-time support for crews during simulator sessions. Performed Qualification Test Guide (QTG) and Preventive Maintenance (PM). Built battery voltage monitoring system with IoT implementation. Performed & PIC for Subjective Test Guide (STG) and involved in several Simulator on Ground (SOG).",
     technologies: ["IoT", "Maintenance", "Level-D FFS", "AW139", "QTG", "STG"]
   },
   {
@@ -130,8 +130,21 @@ export const PROJECTS = [
     link: "https://github.com/husaynirfan1/Smart-Adaptive-Lamp",
     technologies: ["C++", "ESP8266/ESP32", "IoT", "MQTT", "Arduino IDE", "Sensors"]
   },
-  
-  
+];
+
+export const COMMUNITY_CONTRIBUTIONS = [
+  {
+    title: "Open Source: Morphik Core",
+    description: "Contributed to the Morphik Core codebase by engineering a resilient Redis connection strategy with automated Docker fallback, streamlining the local development experience.",
+    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/91.png", 
+    link: "https://github.com/morphik-org/morphik-core/pull/91"
+  },
+  {
+    title: "Morphik Documentation",
+    description: "Officially recognized in the Morphik 'Special Thanks' page for contributing critical PGVector setup instructions for Linux environments.",
+    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/ssmorphik.png", 
+    link: "https://www.morphik.ai/docs/special-thanks"
+  }
 ];
 
 export const SKILLS = [
