@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
         <div className="flex items-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-highlight font-bold mr-6">
             <span className="text-accent text-2xl mr-2">03.</span>
-            Some Latest I've Built
+            Latest I've Built
           </h2>
           <div className="h-px bg-white/10 flex-grow max-w-xs"></div>
         </div>
