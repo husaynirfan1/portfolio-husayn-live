@@ -113,11 +113,11 @@ const Projects: React.FC = () => {
         {/* GitHub Contribution Graph */}
         <div className="mt-32">
           <div className="flex items-center mb-8 justify-center">
-            <div className="h-px bg-white/10 w-12 mr-4"></div>
-            <h3 className="font-serif text-2xl text-highlight font-bold">
+            <div className="h-px bg-white/10 w-8 md:w-12 mr-3 md:mr-4"></div>
+            <h3 className="font-serif text-xl md:text-2xl text-highlight font-bold text-center">
               My GitHub Contributions
             </h3>
-            <div className="h-px bg-white/10 w-12 ml-4"></div>
+            <div className="h-px bg-white/10 w-8 md:w-12 ml-3 md:ml-4"></div>
           </div>
           
           <div className="w-full overflow-hidden rounded-xl bg-surface/50 p-6 md:p-8 shadow-2xl border border-white/5 hover:border-accent/20 transition-all duration-500 group">
@@ -144,13 +144,13 @@ const Projects: React.FC = () => {
 
         {/* Community Contributions */}
         <div className="mt-32">
-           <div className="flex items-center mb-12 justify-center">
-                <div className="h-px bg-white/10 w-12 mr-4"></div>
-                <h3 className="font-serif text-2xl text-highlight font-bold">
+          <div className="flex items-center mb-12 justify-center">
+                <div className="h-px bg-white/10 w-8 md:w-12 mr-3 md:mr-4"></div>
+                <h3 className="font-serif text-xl md:text-2xl text-highlight font-bold text-center">
                   Community Contributions
                 </h3>
-                <div className="h-px bg-white/10 w-12 ml-4"></div>
-           </div>
+                <div className="h-px bg-white/10 w-8 md:w-12 ml-3 md:ml-4"></div>
+          </div>
 
            <div className="grid md:grid-cols-2 gap-8">
               {COMMUNITY_CONTRIBUTIONS.map((contribution, index) => (
