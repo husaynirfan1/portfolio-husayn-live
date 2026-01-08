@@ -44,6 +44,42 @@ export const EXPERIENCES = [
   }
 ];
 
+// Define the shape of a certification object
+export interface Certification {
+  title: string;
+  issuer: string;
+  url: string;
+}
+
+// Export the data array
+export const certifications: Certification[] = [
+  {
+    title: "IBM AI Developer Professional Certificate",
+    issuer: "IBM",
+    url: "https://coursera.org/share/546358d25db26235710622f5df11ecd2",
+  },
+  {
+    title: "Building Generative AI-Powered Applications with Python",
+    issuer: "IBM",
+    url: "https://coursera.org/share/8f34ed7ade64ce96128175631439455c",
+  },
+  {
+    title: "PowerShell for Automating Administration",
+    issuer: "Packt",
+    url: "https://coursera.org/share/dccf882867a7e7fd8a77665a852d7bed",
+  },
+  {
+    title: "Introduction to Networking and Storage",
+    issuer: "IBM",
+    url: "https://coursera.org/share/bace429be7fd4ffaab9bec352b3f59ff",
+  },
+  {
+    title: "Mobile Development and Javascript",
+    issuer: "Meta",
+    url: "https://coursera.org/share/2327c62aa0493ce2ea20321067601fe4",
+  },
+];
+
 export const PROJECTS = [
   {
     title: "Brainynotes",
@@ -60,6 +96,23 @@ export const PROJECTS = [
     mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/ssyt.png",
     link: "https://github.com/husaynirfan1/yt-sentiment-analysis",
     technologies: ["Python", "YouTube Data API", "NLP", "Pandas", "Matplotlib"]
+  },
+  {
+    title: "Finetuning Qwen2.5 1B Model",
+    description: "Engineered a local reasoning AI for avionics troubleshooting by fine-tuning Qwen 2.5 (1.5B) on 4,000+ proprietary maintenance logs. I developed a custom two-stage pipeline (SFT + GRPO), using reinforcement learning with specialized reward functions to enforce strict 'Chain-of-Thought' logic. The resulting model explicitly analyzes technical manuals step-by-step, significantly reducing hallucinations while maintaining low latency.",
+    mediaType: "image",
+    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/Qwen2.5-1.5B-Simulator-Support-Engineer.png",
+    link: "https://github.com/husaynirfan1/Qwen2.5-1.5B-Simulator-Support-Engineer",
+    technologies: [
+        "Python",
+        "Unsloth AI",
+        "Qwen 2.5",
+        "GRPO (Reinforcement Learning)",
+        "PyTorch",
+        "SFT",
+        "Hugging Face TRL",
+        "WandB"
+    ]
   },
   {
     title: "Lukisan Space",
