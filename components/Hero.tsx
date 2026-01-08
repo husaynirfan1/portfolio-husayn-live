@@ -11,6 +11,14 @@ const Hero: React.FC = () => {
     }
   };
 
+  const scrollToAbout = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 relative pt-20 overflow-hidden">
       <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-4 items-center">
@@ -46,9 +54,14 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-muted hidden md:block">
+      <a 
+        href="#about"
+        onClick={scrollToAbout}
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-muted hidden md:block hover:text-highlight transition-colors cursor-pointer"
+        aria-label="Scroll to About section"
+      >
         <ArrowDown size={24} />
-      </div>
+      </a>
     </section>
   );
 };
