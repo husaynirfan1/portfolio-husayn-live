@@ -1,5 +1,6 @@
 import React from 'react';
 import { SKILLS } from '../constants';
+import { certifications } from "../constants"; // 👈 Update this path based on your folder structure
 
 const About: React.FC = () => {
   return (
@@ -55,34 +56,33 @@ const About: React.FC = () => {
             </div>
 
             {/* Certifications Section */}
-            <div>
-              <h3 className="font-serif text-xl text-highlight font-bold mb-4 flex items-center">
-                Certifications
-                <span className="ml-4 h-px bg-white/10 w-20"></span>
-              </h3>
-              <ul className="list-none space-y-3 text-sm font-mono">
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-1">▹</span>
-                  <span>IBM AI Developer Professional Certificate <span className="text-muted/60 block md:inline md:ml-1">— IBM</span></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-1">▹</span>
-                  <span>Building Generative AI-Powered Applications with Python <span className="text-muted/60 block md:inline md:ml-1">— IBM</span></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-1">▹</span>
-                  <span>PowerShell for Automating Administration <span className="text-muted/60 block md:inline md:ml-1">— Packt</span></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-1">▹</span>
-                  <span>Introduction to Networking and Storage <span className="text-muted/60 block md:inline md:ml-1">— IBM</span></span>
-                </li>
-                 <li className="flex items-start">
-                  <span className="text-accent mr-2 mt-1">▹</span>
-                  <span>Mobile Development and Javascript <span className="text-muted/60 block md:inline md:ml-1">— Meta</span></span>
-                </li>
-              </ul>
-            </div>
+                <div>
+                  <h3 className="font-serif text-xl text-highlight font-bold mb-4 flex items-center">
+                    Certifications
+                    <span className="ml-4 h-px bg-white/10 w-20"></span>
+                  </h3>
+                  
+                  <ul className="list-none space-y-3 text-sm font-mono">
+                    {certifications.map((cert, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-accent mr-2 mt-1">▹</span>
+                        <span>
+                          <a
+                            href={cert.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-accent hover:underline transition-colors cursor-pointer"
+                          >
+                            {cert.title}
+                          </a>
+                          <span className="text-muted/60 block md:inline md:ml-1">
+                            — {cert.issuer}
+                          </span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
             {/* Skills Section */}
             <div>
