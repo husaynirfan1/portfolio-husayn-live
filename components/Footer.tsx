@@ -19,9 +19,10 @@ const Footer: React.FC = () => {
             Say Hello
           </a>
           <a 
-            href="https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/RESUME_LATEST_2025.pdf"
+            href="https://7z3tqrxfdnfbzols.public.blob.vercel-storage.com/resume/RESUME_LATEST_2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            download="Husayn_Irfan_2026.pdf"
             className="inline-block border border-accent text-accent px-8 py-4 rounded hover:bg-accent/10 transition-colors duration-300 font-medium w-full sm:w-auto"
           >
             Download Resume
