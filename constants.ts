@@ -18,14 +18,14 @@ export const EXPERIENCES = [
     company: "PWN Excellence Sdn. Bhd.",
     role: "PROTÉGÉ Simulator Support Engineer",
     period: "Aug 2025 — Present",
-    description: "Providing real-time support for crews during simulator sessions. Performing Qualification Test Guide (QTG) and Preventive Maintenance (PM). Built battery voltage monitoring system with IoT implementation.",
+    description: "Provided real-time support for crews during simulatorsessions. Performed Qualification Test Guide (QTG) and Preventive Maintenance (PM). Built battery voltage monitoring system with IoT implementation. Performed & PIC for Subjective Test Guide (STG) and involved in several Simulator on Ground (SOG).",
     technologies: ["IoT", "Maintenance", "Level-D FFS", "AW139", "QTG", "STG"]
   },
   {
     company: "CAE KUALA LUMPUR",
     role: "Apprentice Simulator Technician",
     period: "July 2024 — Jan 2025",
-    description: "Assisted in troubleshooting deficiencies, updating Navigation and Visual databases, and performing maintenance. Developed software from debugged scripts to reduce redundancy and time during troubleshooting.",
+    description: "Provided real-time support for crews during simulatorsessions. Assisted in troubleshooting DR (Deficiency Raised) or casualties during simulator sessions, performing Qualification Test Guide (QTG), Preventive Maintenance (PM), updating Navigation Database (NDB) and visual database. Developed software from debugged script to reduce redundancy and time during troubleshooting. (Batch) Involved in Subjective Test Guide (STG) and involved in several Simulator on Ground (SOG).",
     technologies: ["Batch Scripting", "Troubleshooting", "Database Mgmt", "Level-D FFS", "A320", "A330", "QTG"]
   },
   {
@@ -39,7 +39,7 @@ export const EXPERIENCES = [
     company: "Malaysian Flying Academy",
     role: "Internship Trainee",
     period: "Mar 2022 — July 2022",
-    description: "Gained hands-on experience in Technical Control, Bonded Store operations, and Aircraft Maintenance on Piper Archer and Seminole aircraft.",
+    description: "Gained hands-on experience in Technical Control, Bonded Store operations, and Aircraft Maintenance on Piper Archer, Archer TX and Seminole aircraft.",
     technologies: ["Aircraft Maintenance", "Logistics", "Technical Control"]
   }
 ];
