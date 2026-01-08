@@ -6,7 +6,7 @@ const Experience: React.FC = () => {
 
   return (
     <section id="experience" className="py-24 px-6 bg-surface/30 scroll-mt-24">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="flex items-center mb-16">
           <h2 className="font-serif text-3xl md:text-4xl text-highlight font-bold mr-6">
             <span className="text-accent text-2xl mr-2">02.</span>
@@ -15,15 +15,15 @@ const Experience: React.FC = () => {
           <div className="h-px bg-white/10 flex-grow max-w-xs"></div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           
           {/* --- Tree Navigation --- */}
-          <div className="relative md:w-max">
+          <div className="relative lg:w-max">
             
             {/* Desktop: The Main Vertical Trunk Line */}
-            <div className="hidden md:block absolute left-0 top-0 bottom-0 w-px bg-white/10"></div>
+            <div className="hidden lg:block absolute left-0 top-0 bottom-0 w-px bg-white/10"></div>
 
-            <div className="flex md:flex-col overflow-x-auto md:overflow-visible w-full md:w-auto pb-4 md:pb-0">
+            <div className="flex lg:flex-col overflow-x-auto lg:overflow-visible w-full lg:w-auto pb-4 lg:pb-0 scrollbar-hide">
               {EXPERIENCES.map((exp, index) => (
                 <button
                   key={index}
@@ -37,11 +37,11 @@ const Experience: React.FC = () => {
                     flex-shrink-0
                     
                     /* Mobile: Keep bottom border for tabs */
-                    border-b-2 md:border-b-0
+                    border-b-2 lg:border-b-0
                     
                     /* Desktop: Remove borders, rely on tree structure */
-                    md:border-none
-                    md:pl-12
+                    lg:border-none
+                    lg:pl-12
                     
                     ${activeTab === index 
                       ? 'text-accent border-accent' // Border only shows on mobile
@@ -50,7 +50,7 @@ const Experience: React.FC = () => {
                   `}
                 >
                   {/* --- THE BRANCH (Desktop Only) --- */}
-                  <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-full h-full pointer-events-none">
+                  <div className="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-full h-full pointer-events-none">
                     
                     {/* Horizontal Connector Line */}
                     <span 
@@ -85,26 +85,49 @@ const Experience: React.FC = () => {
           </div>
 
           {/* --- Content Panel --- */}
-          <div className="flex-1 min-h-[300px]">
-            <div key={activeTab} className="animate-fade-in">
-              <h3 className="text-xl text-highlight font-medium mb-1">
-                {EXPERIENCES[activeTab].role} <span className="text-accent">@ {EXPERIENCES[activeTab].company}</span>
-              </h3>
-              <p className="font-mono text-sm text-muted mb-6">
-                {EXPERIENCES[activeTab].period}
-              </p>
+          <div className="flex-1 min-h-[300px] w-full">
+            <div key={activeTab} className="animate-fade-in grid md:grid-cols-5 gap-8 items-start">
               
-              <div className="text-muted leading-relaxed mb-6">
-                {EXPERIENCES[activeTab].description}
+              {/* Text Content */}
+              <div className="md:col-span-3 order-2 md:order-1">
+                <h3 className="text-xl text-highlight font-medium mb-1">
+                  {EXPERIENCES[activeTab].role} <span className="text-accent">@ {EXPERIENCES[activeTab].company}</span>
+                </h3>
+                <p className="font-mono text-sm text-muted mb-6">
+                  {EXPERIENCES[activeTab].period}
+                </p>
+                
+                <div className="text-muted leading-relaxed mb-6">
+                  {EXPERIENCES[activeTab].description}
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+                  {EXPERIENCES[activeTab].technologies.map((tech) => (
+                    <span key={tech} className="px-3 py-1 bg-white/5 rounded-full text-xs font-mono text-accent border border-white/5 hover:border-accent/30 transition-colors">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
 
-              <div className="flex flex-wrap gap-3">
-                {EXPERIENCES[activeTab].technologies.map((tech) => (
-                  <span key={tech} className="px-3 py-1 bg-white/5 rounded-full text-xs font-mono text-accent border border-white/5 hover:border-accent/30 transition-colors">
-                    {tech}
-                  </span>
-                ))}
+              {/* Company Image / Card */}
+              <div className="md:col-span-2 order-1 md:order-2 w-full">
+                <div className="relative group overflow-hidden rounded-lg border border-white/5 shadow-xl bg-black/40">
+                  {/* Image Overlay Effect */}
+                  <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-20 transition-opacity duration-500 z-10"></div>
+                  
+                  {/* The Image */}
+                  <img 
+                    src={EXPERIENCES[activeTab].logo} 
+                    alt={`${EXPERIENCES[activeTab].company} workspace`}
+                    className="w-full h-48 md:h-64 object-cover filter grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105"
+                  />
+                  
+                  {/* Corner Accent */}
+                  <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-accent/50 translate-x-1 translate-y-1"></div>
+                </div>
               </div>
+
             </div>
           </div>
         </div>
