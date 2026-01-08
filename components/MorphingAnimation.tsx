@@ -30,7 +30,7 @@ const MorphingAnimation: React.FC = () => {
       1000
     );
     // Camera positioned to view the models clearly
-    camera.position.z = 330; 
+    camera.position.z = 260; 
     camera.position.y = 0;
     cameraRef.current = camera;
 
