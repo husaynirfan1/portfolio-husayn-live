@@ -105,7 +105,7 @@ export const PROJECTS = [
     title: "Flight Data Extraction - X-Plane 11",
     description: "This project developed a method to retrieve and visualize real-time X-Plane 11 data by configuring a Simulink model to interpret the simulator's UDP structure. Additionally, a stop function was implemented to automatically export the collected simulation data into an Excel file upon completion.",
     mediaType: "image",
-    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/blob/main/x-plane-11-review-header.jpg",
+    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/x-plane-11-review-header.jpg",
     link: "null",
     technologies: ["Simulink", "UDP", "X-Plane", "Matlab", "Matplotlib"]
   },
