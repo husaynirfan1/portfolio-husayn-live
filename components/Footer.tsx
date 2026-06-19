@@ -6,8 +6,8 @@ const Footer: React.FC = () => {
   const handleDownload = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault(); // 1. Stop the browser from opening a new tab
     
-    const fileUrl = "https://7z3tqrxfdnfbzols.public.blob.vercel-storage.com/resume/Husayn_Irfan_Resume_2026.pdf";
-    const filename = "Husayn_Irfan_Resume_2026.pdf"; // The name the user will see
+    const fileUrl = "https://7z3tqrxfdnfbzols.public.blob.vercel-storage.com/resume/Husayn_Irfan_Resume_19062026.pdf";
+    const filename = "Husayn_Irfan_Resume_190626.pdf"; // The name the user will see
 
     try {
       // 2. Fetch the file in the background
