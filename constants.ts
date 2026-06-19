@@ -102,6 +102,14 @@ export const PROJECTS = [
     technologies: ["Python", "YouTube Data API", "NLP", "Pandas", "Matplotlib"]
   },
   {
+    title: "Flight Data Extraction - X-Plane 11",
+    description: "This project developed a method to retrieve and visualize real-time X-Plane 11 data by configuring a Simulink model to interpret the simulator's UDP structure. Additionally, a stop function was implemented to automatically export the collected simulation data into an Excel file upon completion.",
+    mediaType: "image",
+    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/blob/main/x-plane-11-review-header.jpg",
+    link: "null",
+    technologies: ["Simulink", "UDP", "X-Plane", "Matlab", "Matplotlib"]
+  },
+  {
     title: "Finetuning Qwen2.5 1B Model",
     description: "Engineered a local reasoning AI for avionics troubleshooting by fine-tuning Qwen 2.5 (1.5B) on 4,000+ proprietary maintenance logs. I developed a custom two-stage pipeline (SFT + GRPO), using reinforcement learning with specialized reward functions to enforce strict 'Chain-of-Thought' logic. The resulting model explicitly analyzes technical manuals step-by-step, significantly reducing hallucinations while maintaining low latency.",
     mediaType: "image",
