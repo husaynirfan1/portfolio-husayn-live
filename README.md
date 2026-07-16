@@ -5,6 +5,6 @@
 ### You can access the portfolio at [mhusaynirfan.my](https://mhusaynirfan.my)
 
 ## Contacts
-- mhusaynirfan@gmail.com
+- hello@mhusaynirfan.my
 
 Updated since January 2026.
