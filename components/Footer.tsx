@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a 
-            href="mailto:mhusaynirfan@gmail.com"
+            href="mailto:hello@mhusaynirfan.my"
             className="inline-block border border-accent text-accent px-8 py-4 rounded hover:bg-accent/10 transition-colors duration-300 font-medium w-full sm:w-auto"
           >
             Say Hello
