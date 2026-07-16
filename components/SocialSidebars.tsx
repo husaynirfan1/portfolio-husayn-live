@@ -28,7 +28,7 @@ const SocialSidebars: React.FC = () => {
           className="writing-vertical hover:text-accent hover:-translate-y-1 transition-all duration-300 font-mono text-xs tracking-widest"
           style={{ writingMode: 'vertical-rl' }}
         >
-          mhusaynirfan@gmail.com
+          hello@mhusaynirfan.my
         </a>
         <div className="w-px h-24 bg-muted/40 mt-4"></div>
       </div>
