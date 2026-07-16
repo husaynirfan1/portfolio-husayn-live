@@ -10,7 +10,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   { icon: Github, href: "https://github.com/husaynirfan1", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/husayn-irfan-7b4103258", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:mhusaynirfan@gmail.com", label: "Email" },
+  { icon: Mail, href: "mailto:hello@mhusaynirfan.my", label: "Email" },
 ];
 
 export const EXPERIENCES = [ 
