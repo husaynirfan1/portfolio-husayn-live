@@ -91,7 +91,7 @@ export const PROJECTS = [
     mediaType: "image",
     mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/simeye-demo.png",
     link: "https://simeye.mhusaynirfan.my",
-    technologies: ["FastAPI", "ESP32", "ESP-NOW", "HTML", "CSS", "JS", "Python"]
+    technologies: ["FastAPI", "go2rtc", "ESP-NOW", "HTML", "CSS", "JS", "Python"]
   },
   {
     title: "YouTube Sentiment Analysis",
