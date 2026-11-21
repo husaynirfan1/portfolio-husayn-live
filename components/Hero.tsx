@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             I maintain simulators & craft apps.
           </h2>
           <p className="max-w-xl text-lg text-muted leading-relaxed mb-12 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            I'm an Avionics Engineering Graduate, Freelance Mobile App Developer, and AI/ML Enthusiast. I had experience in crafting user-friendly Android applications, RAG frameworks pipeline and of course, simulators!
+            I'm Avionics Engineering Graduate, Freelance Mobile App Developer, and AI/ML Enthusiast. I had experience in crafting user-friendly Android applications, RAG frameworks pipeline and of course, simulators!
           </p>
           
           <div className="animate-slide-up" style={{ animationDelay: '0.5s' }}>
