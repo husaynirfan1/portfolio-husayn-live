@@ -86,12 +86,12 @@ export const certifications: Certification[] = [
 
 export const PROJECTS = [
   {
-    title: "Brainynotes",
-    description: "A document companion powered by LLMs (Llama4) with GraphRAG and custom processing methods. Features chat with notes, document rewriting with parallel agents, and keyword generation for rich chunk retrieval. [OUT OF SERVICE]",
+    title: "SimEye - Monitoring",
+    description: "a real-time web dashboard for an AW139 Full Flight Simulator that displays the weekly booking and maintenance schedule alongside live simulator status, visual dome camera with PTZ, session tracking, and battery monitoring, so the team can see everything at a glance.",
     mediaType: "image",
-    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/brainynotes.png",
-    link: "https://brainynotes.site",
-    technologies: ["Next.js", "FastAPI", "PostgreSQL", "RAG", "Morphik", "Oracle", "REST", "Python"]
+    mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/simeye-demo.png",
+    link: "https://simeye.mhusaynirfan.my",
+    technologies: ["FastAPI", "ESP32", "ESP-NOW", "HTML", "CSS", "JS", "Python"]
   },
   {
     title: "YouTube Sentiment Analysis",
