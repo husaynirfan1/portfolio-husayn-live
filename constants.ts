@@ -87,7 +87,7 @@ export const certifications: Certification[] = [
 export const PROJECTS = [
   {
     title: "SimEye - Monitoring",
-    description: "a real-time web dashboard for an AW139 Full Flight Simulator that displays the weekly booking and maintenance schedule alongside live simulator status, visual dome camera with PTZ, session tracking, and battery monitoring, so the team can see everything at a glance.",
+    description: "A real-time web dashboard for an Full Flight Simulator that displays the weekly booking and maintenance schedule alongside live simulator status, visual dome camera with PTZ, session tracking, and RTH-battery monitoring, so the team can see everything at a glance.",
     mediaType: "image",
     mediaSrc: "https://raw.githubusercontent.com/husaynirfan1/portfolio-updated/main/simeye-demo.png",
     link: "https://simeye.mhusaynirfan.my",
